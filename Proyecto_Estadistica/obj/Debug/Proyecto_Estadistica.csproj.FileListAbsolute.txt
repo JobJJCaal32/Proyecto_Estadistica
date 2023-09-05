@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\bin\Debug\Proyecto_Estadistica.exe.config
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\bin\Debug\Proyecto_Estadistica.exe
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\bin\Debug\Proyecto_Estadistica.pdb
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.FrmMinimosC.resources
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.FrmRegresionL.resources
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.Principal.resources
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.Properties.Resources.resources
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.csproj.GenerateResource.cache
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.exe
+C:\Users\User\Desktop\UMG_Progra\C#\Proyecto_Estadistica\Proyecto_Estadistica\obj\Debug\Proyecto_Estadistica.pdb
