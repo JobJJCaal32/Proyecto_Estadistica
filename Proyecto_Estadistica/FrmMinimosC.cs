@@ -35,9 +35,6 @@ namespace Proyecto_Estadistica
                 //se agregan los datos a los listbox
                 LbDatosX.Items.Add(x);
                 LbDatosY.Items.Add(y);
-                //le paso los datos del list box a el arreglo y poder manejar los datos en la otra clase
-                datos.datoX.Add(x);
-                datos.datoY.Add(y);
 
                 TxtDatoX.Clear();
                 TxtDatoY.Clear();
@@ -82,13 +79,6 @@ namespace Proyecto_Estadistica
             TxtMediaX.Text = Convert.ToString(datos.MediaX);
             TxtMediaY.Text = Convert.ToString(datos.MediaY);
 
-            for (int i = 0; i < contador; i++)
-            {
-                LbColumna1.Items.Add("(" + datos.datoX[i] + " - " + datos.MediaX + ")" +
-                                     "(" + datos.datoY[i] + "-" + datos.MediaY + ")");
-
-
-            }
         }
 
         private void BtnRegresar_Click(object sender, EventArgs e)

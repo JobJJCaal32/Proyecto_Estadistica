@@ -7,6 +7,8 @@ namespace Proyecto_Estadistica
     {
         //instancia a la clase Media para poder usar sus metodos y acceder a sus atributos
         Media datos = new Media();
+        //instancia a la clase ClMetodosRegresionL
+        ClMetodosRegresionL metodos = new ClMetodosRegresionL();
         public FrmRegresionL()
         {
             InitializeComponent();
@@ -36,6 +38,10 @@ namespace Proyecto_Estadistica
                 LbDatosX.Items.Add(x);
                 LbDatosY.Items.Add(y);
 
+                //le paso los datos del list box a el arreglo y poder manejar los datos en la otra clase
+                datos.datoX.Add(x);
+                datos.datoY.Add(y);
+
                 TxtDatoX.Clear();
                 TxtDatoY.Clear();
                 TxtDatoX.Focus();
@@ -45,20 +51,42 @@ namespace Proyecto_Estadistica
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
+            #region Variables
             //se usa cout para poder obtener la cantidad de elementos que tenga el LbdatosX
             int contador = LbDatosX.Items.Count;
             //son las medias aritmeticas
-            double sumaX = 0, sumaY = 0;
+            double sumaX = 0, sumaY = 0, ValorX = 0, ValorY = 0, Columna1, Columna2, Columna3;
             //para poder obetener el valor del ListBox
             String Valor;
+            #endregion
+
+            #region Impresion de Datos
             //para poder sumar los datos
             for (int i = 0; i < contador; i++)
             {
+
                 Valor = LbDatosX.Items[i].ToString();
-                sumaX += Convert.ToDouble(Valor);
+                ValorX = Convert.ToDouble(Valor);
+                sumaX += ValorX;
 
                 Valor = LbDatosY.Items[i].ToString();
-                sumaY += Convert.ToDouble(Valor);
+                ValorY = Convert.ToDouble(Valor);
+                sumaY += ValorY;
+
+                //impresion en la primera columna de XY
+                Columna1 = ValorX * ValorY;
+                LbColumna1.Items.Add(LbDatosX.Items[i] + " * " + LbDatosX.Items[i] + " = " + Columna1);
+                metodos.Columna1(Columna1);
+
+                //impresion en la primera columna de X^2
+                Columna2 = Math.Pow(ValorX, 2);
+                LbColumna2.Items.Add(LbDatosX.Items[i] + " ^2 = " + Columna2);
+                metodos.Columna2(Columna2);
+
+                //impresion en la primera columna de Y^2
+                Columna3 = Math.Pow(ValorY, 2);
+                LbColumna3.Items.Add(LbDatosY.Items[i] + " ^2 = " + Columna3);
+                metodos.Columna3(Columna3);
 
             }
             //se manda los datos al metodo media y que calcule la media de cada uno 
@@ -69,12 +97,31 @@ namespace Proyecto_Estadistica
             TxtMediaX.Text = Convert.ToString(datos.MediaX);
             TxtMediaY.Text = Convert.ToString(datos.MediaY);
 
-            for (int i = 0;i < contador;i++)
-            {
-                
+            //se imprimi la suma de la multiplicacion de XY
+            TxtSumaXY.Text = Convert.ToString(metodos.sumaC1);
+            //se imprimi la suma de X^2
+            TxtSuma1.Text = Convert.ToString(metodos.sumaC2);
+            //se imprimi la suma de Y^2
+            TxtSuma2.Text = Convert.ToString(metodos.sumaC3);
+            #endregion
 
+            #region calculo formulas
+            // se hace llamado a los metodos que van a necesitar datos
+            metodos.DatoA(sumaX, sumaY, contador);
+            metodos.DatoB(sumaX, sumaY, contador);
+            metodos.DatoCovX(contador, datos.MediaX);
+            metodos.DatoCovY(contador, datos.MediaY);
+            metodos.DatoCovXY(contador, datos.MediaX, datos.MediaY);
+            metodos.DatoR();
+            
+            TxtA.Text = Convert.ToString(Math.Round(metodos.A,3));
+            TxtB.Text = Convert.ToString(Math.Round(metodos.B, 3));
+            TxtCovX.Text = Convert.ToString(Math.Round(metodos.CovX,3));
+            TxtCovY.Text = Convert.ToString(Math.Round(metodos.CovY, 3));
+            TxtCovXY.Text = Convert.ToString(Math.Round(metodos.CovXY, 3));
+            TxtR.Text = Convert.ToString(Math.Round(metodos.R, 3));
 
-            }
+            #endregion
 
         }
 
@@ -83,6 +130,11 @@ namespace Proyecto_Estadistica
             Principal fp = new Principal();
             this.Dispose();
             fp.Show();
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
