@@ -38,9 +38,6 @@ namespace Proyecto_Estadistica
                 LbDatosX.Items.Add(x);
                 LbDatosY.Items.Add(y);
 
-                //le paso los datos del list box a el arreglo y poder manejar los datos en la otra clase
-                datos.datoX.Add(x);
-                datos.datoY.Add(y);
 
                 TxtDatoX.Clear();
                 TxtDatoY.Clear();
@@ -114,6 +111,7 @@ namespace Proyecto_Estadistica
             metodos.DatoCovXY(contador, datos.MediaX, datos.MediaY);
             metodos.DatoR();
             
+            //impresion de datos en los TextBox
             TxtA.Text = Convert.ToString(Math.Round(metodos.A,3));
             TxtB.Text = Convert.ToString(Math.Round(metodos.B, 3));
             TxtCovX.Text = Convert.ToString(Math.Round(metodos.CovX,3));
@@ -133,6 +131,11 @@ namespace Proyecto_Estadistica
         }
 
         private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbColumna3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

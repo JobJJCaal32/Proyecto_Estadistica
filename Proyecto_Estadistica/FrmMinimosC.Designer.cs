@@ -53,9 +53,35 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.LbColumna2 = new System.Windows.Forms.ListBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.LbColumna3 = new System.Windows.Forms.ListBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LbColumna4 = new System.Windows.Forms.ListBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.LbColumna5 = new System.Windows.Forms.ListBox();
+            this.TxtSumaC1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.TxtSumaC2 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.TxtSumaC4 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.TxtSumaC5 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.TxtB1 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.TxtBo = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.TxtR = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.TxtR2 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -257,7 +283,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(154, 156);
+            this.label11.Location = new System.Drawing.Point(169, 156);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 16);
             this.label11.TabIndex = 38;
@@ -269,7 +295,7 @@
             this.LbColumna1.Location = new System.Drawing.Point(151, 175);
             this.LbColumna1.Name = "LbColumna1";
             this.LbColumna1.ScrollAlwaysVisible = true;
-            this.LbColumna1.Size = new System.Drawing.Size(103, 225);
+            this.LbColumna1.Size = new System.Drawing.Size(116, 225);
             this.LbColumna1.TabIndex = 39;
             // 
             // groupBox2
@@ -302,11 +328,265 @@
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(301, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "(X-X ̅)^2";
+            // 
+            // LbColumna2
+            // 
+            this.LbColumna2.FormattingEnabled = true;
+            this.LbColumna2.Location = new System.Drawing.Point(273, 175);
+            this.LbColumna2.Name = "LbColumna2";
+            this.LbColumna2.ScrollAlwaysVisible = true;
+            this.LbColumna2.Size = new System.Drawing.Size(98, 225);
+            this.LbColumna2.TabIndex = 41;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(390, 156);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(86, 16);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Ý = bₒ + b1(X)";
+            // 
+            // LbColumna3
+            // 
+            this.LbColumna3.FormattingEnabled = true;
+            this.LbColumna3.Location = new System.Drawing.Point(377, 175);
+            this.LbColumna3.Name = "LbColumna3";
+            this.LbColumna3.ScrollAlwaysVisible = true;
+            this.LbColumna3.Size = new System.Drawing.Size(116, 225);
+            this.LbColumna3.TabIndex = 43;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(509, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(78, 16);
+            this.label13.TabIndex = 44;
+            this.label13.Text = "SCT(Y-Ý)^2";
+            // 
+            // LbColumna4
+            // 
+            this.LbColumna4.FormattingEnabled = true;
+            this.LbColumna4.Location = new System.Drawing.Point(499, 175);
+            this.LbColumna4.Name = "LbColumna4";
+            this.LbColumna4.ScrollAlwaysVisible = true;
+            this.LbColumna4.Size = new System.Drawing.Size(101, 225);
+            this.LbColumna4.TabIndex = 45;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(622, 156);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(76, 16);
+            this.label14.TabIndex = 46;
+            this.label14.Text = "SCE o SCR";
+            // 
+            // LbColumna5
+            // 
+            this.LbColumna5.FormattingEnabled = true;
+            this.LbColumna5.Location = new System.Drawing.Point(606, 175);
+            this.LbColumna5.Name = "LbColumna5";
+            this.LbColumna5.ScrollAlwaysVisible = true;
+            this.LbColumna5.Size = new System.Drawing.Size(101, 225);
+            this.LbColumna5.TabIndex = 47;
+            // 
+            // TxtSumaC1
+            // 
+            this.TxtSumaC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSumaC1.Location = new System.Drawing.Point(153, 440);
+            this.TxtSumaC1.Name = "TxtSumaC1";
+            this.TxtSumaC1.Size = new System.Drawing.Size(77, 22);
+            this.TxtSumaC1.TabIndex = 48;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(150, 413);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(118, 16);
+            this.label15.TabIndex = 49;
+            this.label15.Text = "Suma∑(X-X ̅)(Y-Y ̅):";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(272, 414);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(99, 16);
+            this.label16.TabIndex = 51;
+            this.label16.Text = "Suma∑(X-X ̅)^2:";
+            // 
+            // TxtSumaC2
+            // 
+            this.TxtSumaC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSumaC2.Location = new System.Drawing.Point(273, 440);
+            this.TxtSumaC2.Name = "TxtSumaC2";
+            this.TxtSumaC2.Size = new System.Drawing.Size(77, 22);
+            this.TxtSumaC2.TabIndex = 50;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(498, 413);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(81, 16);
+            this.label18.TabIndex = 55;
+            this.label18.Text = "Suma∑SCT:";
+            // 
+            // TxtSumaC4
+            // 
+            this.TxtSumaC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSumaC4.Location = new System.Drawing.Point(499, 439);
+            this.TxtSumaC4.Name = "TxtSumaC4";
+            this.TxtSumaC4.Size = new System.Drawing.Size(77, 22);
+            this.TxtSumaC4.TabIndex = 54;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(605, 414);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(123, 16);
+            this.label19.TabIndex = 57;
+            this.label19.Text = "Suma∑SCR o SCE:";
+            // 
+            // TxtSumaC5
+            // 
+            this.TxtSumaC5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSumaC5.Location = new System.Drawing.Point(608, 440);
+            this.TxtSumaC5.Name = "TxtSumaC5";
+            this.TxtSumaC5.Size = new System.Drawing.Size(77, 22);
+            this.TxtSumaC5.TabIndex = 56;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.TxtR);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.TxtR2);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.TxtBo);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.TxtB1);
+            this.groupBox4.Location = new System.Drawing.Point(727, 175);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(252, 118);
+            this.groupBox4.TabIndex = 58;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Datos Formulas";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(13, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(25, 16);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "b1:";
+            // 
+            // TxtB1
+            // 
+            this.TxtB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtB1.Location = new System.Drawing.Point(42, 22);
+            this.TxtB1.Name = "TxtB1";
+            this.TxtB1.Size = new System.Drawing.Size(77, 22);
+            this.TxtB1.TabIndex = 59;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(130, 25);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(23, 16);
+            this.label21.TabIndex = 62;
+            this.label21.Text = "bₒ:";
+            // 
+            // TxtBo
+            // 
+            this.TxtBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBo.Location = new System.Drawing.Point(159, 22);
+            this.TxtBo.Name = "TxtBo";
+            this.TxtBo.Size = new System.Drawing.Size(77, 22);
+            this.TxtBo.TabIndex = 61;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(130, 64);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(14, 16);
+            this.label17.TabIndex = 66;
+            this.label17.Text = "r:";
+            // 
+            // TxtR
+            // 
+            this.TxtR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtR.Location = new System.Drawing.Point(159, 61);
+            this.TxtR.Name = "TxtR";
+            this.TxtR.Size = new System.Drawing.Size(77, 22);
+            this.TxtR.TabIndex = 65;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(13, 64);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(28, 16);
+            this.label22.TabIndex = 64;
+            this.label22.Text = "r^2:";
+            // 
+            // TxtR2
+            // 
+            this.TxtR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtR2.Location = new System.Drawing.Point(42, 61);
+            this.TxtR2.Name = "TxtR2";
+            this.TxtR2.Size = new System.Drawing.Size(77, 22);
+            this.TxtR2.TabIndex = 63;
+            // 
             // FrmMinimosC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 510);
+            this.ClientSize = new System.Drawing.Size(991, 510);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.TxtSumaC5);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.TxtSumaC4);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.TxtSumaC2);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.TxtSumaC1);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.LbColumna5);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.LbColumna4);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.LbColumna3);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.LbColumna2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.LbColumna1);
@@ -325,10 +605,13 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmMinimosC";
             this.Text = "Minimos Cuadrados";
+            this.Load += new System.EventHandler(this.FrmMinimosC_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,5 +643,30 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnRegresar;
         private System.Windows.Forms.Button BtnNuevo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox LbColumna2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ListBox LbColumna3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ListBox LbColumna4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ListBox LbColumna5;
+        private System.Windows.Forms.TextBox TxtSumaC1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox TxtSumaC2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox TxtSumaC4;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox TxtSumaC5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox TxtBo;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox TxtB1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox TxtR;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox TxtR2;
     }
 }
